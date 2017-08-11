@@ -1,6 +1,8 @@
 # MotionBlur-detection-by-using-CNN
 
-This is the folder that constain codes to run our cnn model.
+This project is based on research [started by HAL](https://hal.inria.fr/hal-01250478/document) on learning a convolutional neural network for non-uniform motion blur removal. 
+
+This is the folder that constain codes to run my cnn model.
 
 The "data.zip" are available through google drive link below. https://drive.google.com/a/bu.edu/file/d/0B8GhS4dXq_m2UTE5NG9sUVlLZkE/view?usp=sharing
 
