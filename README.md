@@ -4,7 +4,7 @@ This project is based on research [started by HAL](https://hal.inria.fr/hal-0125
 
 This is the folder that constain codes to run my cnn model.
 
-Data are available through google drive link here:[data.zip](https://drive.google.com/a/bu.edu/file/d/0B8GhS4dXq_m2UTE5NG9sUVlLZkE/view?usp=sharing)  
+Training and testing data are available through google drive link here:[data.zip](https://drive.google.com/a/bu.edu/file/d/0B8GhS4dXq_m2UTE5NG9sUVlLZkE/view?usp=sharing)  
 
 In order to successfully running the code, please first unzip the "data.zip" file and put those folders "s_cnn","s_oridata","tarimg" and "transimg" into the same folder with the other python codes.
 
