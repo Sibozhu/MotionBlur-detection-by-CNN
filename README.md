@@ -46,10 +46,10 @@ We achieved this by:
 31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA.
 ```
 
-```
 ![Image of blur]
 (https://github.com/Sibozhu/MotionBlur-detection-by-CNN/blob/master/Report/images/blur.png)
 ![Image](https://github.com/Sibozhu/MotionBlur-detection-by-CNN/blob/master/Report/images/blur.png?raw=true)
+```
 Image of the original-to-blur process.
 ```
 ```
