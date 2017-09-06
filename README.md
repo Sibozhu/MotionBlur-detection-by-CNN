@@ -1,4 +1,4 @@
-# MotionBlur-detection-by-using-CNN
+# MotionBlur-detection-by-CNN
 
 This project is based on research [started by HAL](https://hal.inria.fr/hal-01250478/document) on learning a convolutional neural network for non-uniform motion blur removal. 
 
