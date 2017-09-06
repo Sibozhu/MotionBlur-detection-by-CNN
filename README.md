@@ -47,7 +47,7 @@ We achieved this by:
 ```
 
 ```
-![Image of the original-to-blur process]
+![Image of blur]
 (https://github.com/Sibozhu/MotionBlur-detection-by-CNN/blob/master/Report/images/blur.png)
 Image of the original-to-blur process.
 ```
