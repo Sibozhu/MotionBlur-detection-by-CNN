@@ -104,6 +104,9 @@ optimizer for our model.
 After training with 100 epochs,we had testing accuracy of 92%, which is a very optimal rate for
 our model. Our training model is saved in an HDF5 file,"motionblur.h5".
 
+![Image](https://github.com/Sibozhu/MotionBlur-detection-by-CNN/blob/master/Report/images/accuracy.jpeg?raw=true)
+
+
 ## 3 Conclusion
 
 In this report, we have proposed a novel CNN-based motion blur detection apporach. We learn an
