@@ -50,6 +50,8 @@ We achieved this by:
 ```
 Image of the original-to-blur process.
 ```
+![Image](https://github.com/Sibozhu/MotionBlur-detection-by-CNN/blob/master/Report/images/patches.png?raw=true)
+
 ```
 Image of the image splitting process.
 ```
