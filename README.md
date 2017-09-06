@@ -55,8 +55,12 @@ Image of the original-to-blur process.
 ```
 Image of the image splitting process.
 ```
-The final image with its corresponding matrix.
 
+![Image](https://github.com/Sibozhu/MotionBlur-detection-by-CNN/blob/master/Report/images/matrix.png?raw=true)
+
+```
+The final image with its corresponding matrix.
+```
 
 We repeat the above for all 100 images, until we end up with a folder containing partially-blurred
 images"0.jpg"through"100.jpg", and a 3D list (named"labels") that contains 100 matrices. This
