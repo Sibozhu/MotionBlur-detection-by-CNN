@@ -44,9 +44,7 @@ We achieved this by:
 6. Saving the image as "n.jpg" (where n is the serial number of the image), and adding the
     matrix to a list (to form a 3D ’list of lists’) containing the matrices of all the image.
 
-```
-31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA.
-```
+
 
 ![Image](https://github.com/Sibozhu/MotionBlur-detection-by-CNN/blob/master/Report/images/blur.png?raw=true)
 ```
