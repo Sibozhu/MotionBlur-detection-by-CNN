@@ -1,6 +1,5 @@
 # MotionBlur-detection-by-CNN
 
-# Detecting Motion Blur in Images
 
 ```
 To run the cnn model, just enter "cnn.py" and run the code. It might take 
