@@ -4,10 +4,10 @@ import random
 from PIL import Image
 import os, os.path
 
-oripath = "/s_oridata/"
-noblurpath = "/s_cnn/train/no_blur/"
-blurpath = "/s_cnn/train/blur/"
-#inputpath = "/Users/sibozhu/DeepLearning/testing/cnn/train/inputdata/"
+oripath = "./s_oridata/"
+noblurpath = "./s_cnn/train/no_blur/"
+blurpath = "./s_cnn/train/blur/"
+allimgpath = "./s_cnn/train/inputdata/"
 
 size = 15
 gridx=30
@@ -35,28 +35,28 @@ print('finished loading images')
 #
 
 #
-# looping to create blured images
+# looping to create blurry and non-blurry images in 50% chance
 for i in range(len(pi_imgs)):
-    # creating a blured copy of the original image
     img = pi_imgs[i]
     (imageWidth, imageHeight) = img.size
-    rangex = img.width / gridx
-    rangey = img.height / gridy
+
+    rangex = imageWidth / gridx
+    rangey = imageHeight / gridy
     for x in xrange(rangex):
         for y in xrange(rangey):
 
             bbox = (x * gridx, y * gridy, x * gridx + gridx, y * gridy + gridy)
             slice_bit = img.crop(bbox)
             if random.randrange(2) == 0:
-                slice_bit.save(noblurpath + 'noblur,' +str(i)+'_'+ str(x) + '_' + str(y) + '.jpg', optimize=True, bits=6)
-                #slice_bit.save(inputpath + 'noblur,' + str(i) + '_' + str(x) + '_' + str(y) + '.jpg', optimize=True,bits=6)
+                slice_bit.save(noblurpath + str(i)+'_'+ str(x) + '_' + str(y) + ',noblur.jpg', optimize=True, bits=6)
+                slice_bit.save(allimgpath + str(i)+'_'+ str(x) + '_' + str(y) + ',noblur.jpg', optimize=True,bits=6)
                 print(str(i))
             else:
-                slice_bit.save(blurpath + 'blur,' + str(i)+'_'+str(x) + '_' + str(y) + '.jpg', optimize=True, bits=6)
-                img1 = cv2.imread(blurpath + 'blur,' +str(i)+'_'+ str(x) + '_' + str(y) + '.jpg')
+                slice_bit.save(blurpath + str(i)+'_'+ str(x) + '_' + str(y) + ',blur.jpg', optimize=True, bits=6)
+                img1 = cv2.imread(blurpath + str(i)+'_'+ str(x) + '_' + str(y) + ',blur.jpg')
                 output = cv2.filter2D(img1, -1, kernel_motion_blur)
-                cv2.imwrite(blurpath + 'blur,' +str(i)+'_'+ str(x) + '_' + str(y) + '.jpg', output)
-                #cv2.imwrite(inputpath + 'blur,' + str(i) + '_' + str(x) + '_' + str(y) + '.jpg', output)
+                cv2.imwrite(blurpath + str(i)+'_'+ str(x) + '_' + str(y) + ',blur.jpg', output)
+                cv2.imwrite(allimgpath + str(i)+'_'+ str(x) + '_' + str(y) + ',blur.jpg', output)
                 print(str(i))
 
 
