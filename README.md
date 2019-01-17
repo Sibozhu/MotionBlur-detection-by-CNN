@@ -9,7 +9,7 @@ or GPU to run this code would significantly lower the running time.
 ## Abstract
 
 ```
-Our project aims to estimate motion blur from a single, blurry image. We propose
+Our project aims to detect motion blur from a single, blurry image. We propose
 a deep learning approach to predict the probabilistic distribution of motion blur at
 the patch level using a Convolutional Neural Network (CNN).
 ```
